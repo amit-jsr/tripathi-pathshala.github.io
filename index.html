@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tripathi Pathshala – Education Center, Chhatarpur, New Delhi</title>
+<meta name="description" content="Tripathi Pathshala is an education center in Chhatarpur, New Delhi, offering personalized tutoring for Class 5 to Class 12 with Mathematics, Science, English, study materials, worksheets, regular tests, and board exam preparation.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="TRIPATHI PATHSHALA - Education Center in Chhatarpur, New Delhi">
+<meta property="og:description" content="High-quality personalized tutoring for Class 5 to Class 12 near Rawat Chowk, Chhatarpur, New Delhi.">
+<meta property="og:image" content="https://lh6.googleusercontent.com/-4T-Is9sCAs4/AAAAAAAAAAI/AAAAAAAAAAA/p7qpwSsbLoM/s44-p-k-no-ns-nd/photo.jpg">
+<link rel="icon" href="https://lh6.googleusercontent.com/-4T-Is9sCAs4/AAAAAAAAAAI/AAAAAAAAAAA/p7qpwSsbLoM/s44-p-k-no-ns-nd/photo.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,9 +37,9 @@ nav {
 }
 .logo-wrap { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .logo-icon {
-  width: 40px; height: 40px; background: var(--saffron); border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #fff;
+  width: 44px; height: 44px; border-radius: 10px;
+  object-fit: cover; display: block; background: var(--white);
+  border: 2px solid var(--saffron-lt); box-shadow: 0 4px 14px rgba(18,32,64,.12);
 }
 .logo-name { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--navy); line-height: 1.1; }
 .logo-tag { font-size: 10px; color: var(--saffron); font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; }
@@ -108,8 +114,7 @@ nav {
 .hc-avatar {
   width: 54px; height: 54px; border-radius: 50%;
   background: var(--saffron-lt); border: 3px solid var(--saffron);
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--saffron);
+  display: block; object-fit: cover;
   flex-shrink: 0;
 }
 .hc-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 2px; }
@@ -180,8 +185,7 @@ section { padding: 4rem 2rem; }
 }
 .ap-avatar {
   width: 90px; height: 90px; border-radius: 50%; border: 4px solid var(--saffron);
-  background: var(--saffron-lt); display: flex; align-items: center; justify-content: center;
-  font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--saffron);
+  background: var(--saffron-lt); display: block; object-fit: cover;
   margin: 0 auto 1rem; position: relative; z-index: 1;
 }
 .ap-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #fff; margin-bottom: 4px; position: relative; z-index: 1; }
@@ -205,6 +209,41 @@ section { padding: 4rem 2rem; }
 .t-pic { width: 36px; height: 36px; border-radius: 50%; background: var(--saffron-lt); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; color: var(--saffron); flex-shrink: 0; }
 .t-name { font-weight: 600; font-size: 13px; color: var(--navy); }
 .t-class { font-size: 11px; color: var(--muted); }
+
+/* ── PHOTOS & LOCATION ── */
+.gallery-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1.1rem; align-items: stretch; }
+.photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.photo-card {
+  min-height: 180px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);
+  background: var(--white); box-shadow: 0 8px 24px rgba(18,32,64,.06);
+}
+.photo-card img { width: 100%; height: 100%; min-height: 180px; object-fit: cover; display: block; }
+.map-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.map-card iframe { width: 100%; height: 100%; min-height: 376px; border: 0; display: block; }
+.map-link {
+  display: block; padding: 12px 16px; color: var(--navy); text-decoration: none;
+  font-weight: 600; font-size: 13px; border-top: 1px solid var(--border);
+}
+.map-link:hover { color: var(--saffron); }
+
+/* ── REVIEWS ── */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.review-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: 12px;
+  padding: 1.35rem; box-shadow: 0 12px 34px rgba(18,32,64,.08);
+}
+.review-head { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+.review-avatar {
+  width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--saffron); color: #fff; font-weight: 700; font-size: 20px;
+}
+.review-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.review-name { color: var(--navy); font-weight: 700; line-height: 1.15; }
+.review-count { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.reviews-stars { color: #F7B500; letter-spacing: .08em; font-size: 1.15rem; margin-bottom: .75rem; }
+.review-time { color: var(--muted); font-size: 13px; letter-spacing: 0; margin-left: 6px; }
+.review-text { color: var(--muted); font-size: 14px; line-height: 1.7; }
 
 /* ── CONTACT ── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; align-items: start; }
@@ -249,6 +288,8 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
   .stats-inner { grid-template-columns: repeat(2,1fr); }
   nav .nav-links { display: none; }
   .form-row { grid-template-columns: 1fr; }
+  .gallery-grid, .photo-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.9rem; }
 }
 </style>
@@ -258,7 +299,7 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
 <!-- NAV -->
 <nav>
   <a class="logo-wrap" href="#">
-    <div class="logo-icon">त</div>
+    <img class="logo-icon" src="https://lh6.googleusercontent.com/-4T-Is9sCAs4/AAAAAAAAAAI/AAAAAAAAAAA/p7qpwSsbLoM/s44-p-k-no-ns-nd/photo.jpg" alt="Tripathi Pathshala logo" width="44" height="44">
     <div>
       <div class="logo-name">Tripathi Pathshala</div>
       <div class="logo-tag">Education Center · Chhatarpur, Delhi</div>
@@ -268,6 +309,8 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#subjects">Subjects</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Location</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a class="nav-wa" href="https://wa.me/+916307334572?text=Hi!+I+found+your+Pathshala+and+want+to+enroll">💬 WhatsApp</a></li>
   </ul>
@@ -277,12 +320,12 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
 <div class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge">📍 Chhatarpur · South Delhi</div>
+      <div class="hero-badge">📍 Chhatarpur · New Delhi</div>
       <h1>Quality Coaching<br>for Class <span>5 to 12</span></h1>
-      <p class="hero-desc">Personalized tutoring in Mathematics, Science, and English — building genuine understanding, not just exam scores. Located near Rawat Chowk, Chhatarpur, New Delhi.</p>
+      <p class="hero-desc">High-quality, personalized tutoring for students from Class 5 to Class 12 — with Mathematics, Science, English, study materials, worksheets, regular tests and board exam preparation.</p>
       <div class="hero-meta">
         <div class="meta-item"><span class="meta-dot"></span>Monday to Sunday · 11am – 9pm</div>
-        <div class="meta-item"><span class="meta-dot"></span>Dr Ambedkar Colony, Chhatarpur, New Delhi 110074</div>
+        <div class="meta-item"><span class="meta-dot"></span>G54H+8P Chhatarpur, New Delhi</div>
         <div class="meta-item"><span class="meta-dot"></span>+91 6307334572</div>
       </div>
       <div class="hero-btns">
@@ -293,13 +336,13 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
     <div>
       <div class="hero-card">
         <div class="hc-head">
-          <div class="hc-avatar">TP</div>
+          <img class="hc-avatar" src="https://lh6.googleusercontent.com/-4T-Is9sCAs4/AAAAAAAAAAI/AAAAAAAAAAA/p7qpwSsbLoM/s44-p-k-no-ns-nd/photo.jpg" alt="Tripathi Pathshala logo" width="54" height="54">
           <div>
             <div class="hc-name">Tripathi Pathshala</div>
             <div class="hc-role">Education Center · Est. 2020</div>
           </div>
         </div>
-        <p class="hc-info">Dedicated to providing high-quality, personalized tutoring for students from Class 5 to Class 12. Located in the heart of Chhatarpur, nearby Rawat Chowk, South Delhi.</p>
+        <p class="hc-info">Located in the heart of Chhatarpur, near Rawat Chowk, New Delhi. Tripathi Pathshala focuses on academic excellence, personal growth and continuous assessment.</p>
         <div class="hc-tags">
           <span class="tag">Mathematics</span>
           <span class="tag">Science</span>
@@ -341,31 +384,31 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
   <div class="container">
     <div class="sec-label">What We Offer</div>
     <h2 class="sec-title">Our Services</h2>
-    <p class="sec-sub">From regular tuition to special needs support, we provide a caring and structured learning environment for every student.</p>
+    <p class="sec-sub">These are the services listed on the older Tripathi Pathshala website, now presented clearly on this single-page site.</p>
     <div class="services-grid">
       <div class="svc-card">
         <div class="svc-num">01</div>
         <div class="svc-icon">🎓</div>
         <div class="svc-name">Secondary Education</div>
-        <div class="svc-desc">Strong foundational coaching aligned with CBSE & state board curriculum for Classes 9–12.</div>
+        <div class="svc-desc">Structured academic support for school students, with a focus on strong foundations and exam readiness.</div>
       </div>
       <div class="svc-card">
         <div class="svc-num">02</div>
         <div class="svc-icon">🤝</div>
-        <div class="svc-name">Special Needs Support</div>
-        <div class="svc-desc">Patient, personalised teaching for students who need extra care and a tailored learning approach.</div>
+        <div class="svc-name">Special Needs</div>
+        <div class="svc-desc">Patient, personalized teaching for students who need extra care and a learning pace suited to them.</div>
       </div>
       <div class="svc-card">
         <div class="svc-num">03</div>
         <div class="svc-icon">📝</div>
-        <div class="svc-name">Private Tutoring</div>
-        <div class="svc-desc">One-on-one sessions focused on concept clarity, doubt-solving and exam preparation.</div>
+        <div class="svc-name">Tutoring</div>
+        <div class="svc-desc">Personalized tutoring services for concept clarity, worksheets, doubt-solving and regular assessment.</div>
       </div>
       <div class="svc-card">
         <div class="svc-num">04</div>
         <div class="svc-icon">🏫</div>
-        <div class="svc-name">Class 6–10 Tuition Centre</div>
-        <div class="svc-desc">Batch classes for middle and high school students covering all core subjects systematically.</div>
+        <div class="svc-name">Class 6 to 10 Tuition Centre</div>
+        <div class="svc-desc">A dedicated tuition centre format for middle and high school students covering key school subjects.</div>
       </div>
     </div>
   </div>
@@ -403,11 +446,6 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
         <div class="subj-name">Social Science</div>
         <div class="subj-detail">History · Geo · Civics</div>
       </div>
-      <div class="subj-card">
-        <div class="subj-icon">🧮</div>
-        <div class="subj-name">Sanskrit</div>
-        <div class="subj-detail">Grammar & Translation</div>
-      </div>
     </div>
   </div>
 </section>
@@ -417,7 +455,7 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
   <div class="container">
     <div class="about-grid">
       <div class="about-panel">
-        <div class="ap-avatar">TP</div>
+        <img class="ap-avatar" src="https://lh6.googleusercontent.com/-4T-Is9sCAs4/AAAAAAAAAAI/AAAAAAAAAAA/p7qpwSsbLoM/s44-p-k-no-ns-nd/photo.jpg" alt="Tripathi Pathshala logo" width="90" height="90">
         <div class="ap-name">Tripathi Pathshala</div>
         <div class="ap-deg">Education Center · Chhatarpur, New Delhi</div>
         <div class="ap-badges">
@@ -426,13 +464,14 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
           <span class="ap-badge">English</span>
           <span class="ap-badge">Special Needs</span>
         </div>
-        <div class="ap-address">B 26 Rawat Chowk, Gali No 13<br>Ambedkar Nagar Colony, Chhatarpur<br>New Delhi, Delhi 110074</div>
+        <div class="ap-address">G54H+8P Chhatarpur<br>New Delhi, Delhi, India<br>Near Rawat Chowk</div>
       </div>
       <div>
         <div class="sec-label">About Us</div>
         <h2 class="sec-title">Committed to Every Student's Growth</h2>
-        <p>At Tripathi Pathshala, we are dedicated to providing high-quality, personalized tutoring services for students from Class 5 to Class 12. Located in the heart of Chhatarpur, nearby Rawat Chowk, South Delhi.</p>
-        <p>We specialize in Mathematics, Science, and English, with experienced educators who create a supportive and structured learning environment focused on results and confidence-building.</p>
+        <p>At Tripathi Pathshala, we are dedicated to providing high-quality, personalized tutoring services for students from Class 5 to Class 12. Located in the heart of Chhatarpur, nearby Rawat Chowk, New Delhi, we specialize in subjects like Mathematics, Science, and English.</p>
+        <p>Our experienced educators create a supportive learning environment focused on academic excellence and personal growth. We offer comprehensive study materials, worksheets, and regular tests to ensure thorough understanding and continuous assessment.</p>
+        <p>Whether it is board exam preparation or building a strong foundation in key subjects, Tripathi Pathshala is here to guide your child every step of the way.</p>
         <ul class="feat-list">
           <li><span class="chk">✓</span>Personalized attention for each student</li>
           <li><span class="chk">✓</span>Special needs support with patience</li>
@@ -445,48 +484,68 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials">
+<!-- REVIEWS -->
+<section class="services-bg" id="reviews">
   <div class="container">
-    <div class="sec-label">Student Reviews</div>
-    <h2 class="sec-title">Trusted by Our Students</h2>
-    <p class="sec-sub">Hear from students and parents in Chhatarpur who have seen real results at Tripathi Pathshala.</p>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <div class="testi-q">"Maths became easy!"</div>
-        <p class="testi-text">My son used to be scared of maths. After joining Tripathi Pathshala his marks improved a lot and he is more confident now.</p>
-        <div class="testi-author">
-          <div class="t-pic">RP</div>
+    <div class="sec-label">Google Reviews</div>
+    <h2 class="sec-title">Original Reviews</h2>
+    <p class="sec-sub">Recent 5-star reviews shared publicly on Google by students and parents.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar">K</div>
           <div>
-            <div class="t-name">Ramesh Prasad</div>
-            <div class="t-class">Parent · Class 9</div>
+            <div class="review-name">Kartik Bauddh</div>
+            <div class="review-count">1 review</div>
           </div>
+        </div>
+        <div class="reviews-stars">★★★★★ <span class="review-time">3 months ago</span></div>
+        <p class="review-text">This is avery good caching and teach me and friends very well</p>
+      </div>
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar">O</div>
+          <div>
+            <div class="review-name">Om JHA</div>
+            <div class="review-count">1 review</div>
+          </div>
+        </div>
+        <div class="reviews-stars">★★★★★ <span class="review-time">3 months ago</span></div>
+        <p class="review-text">Very best coching for class 6th class to 10th class</p>
+      </div>
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar">N</div>
+          <div>
+            <div class="review-name">Nerf boy gamer</div>
+            <div class="review-count">1 review</div>
+          </div>
+        </div>
+        <div class="reviews-stars">★★★★★ <span class="review-time">3 months ago</span></div>
+        <p class="review-text">Tripathi Pathshala is one of the best tuition centres. Teachers explain every topic clearly and give personal attention to each student. My concepts have become much stronger here. Highly recommended!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <div class="sec-label">Photos & Map</div>
+    <h2 class="sec-title">Find Us Near Rawat Chowk</h2>
+    <p class="sec-sub">Use the map below for the exact Tripathi Pathshala location near Rawat Chowk, Chhatarpur.</p>
+    <div class="gallery-grid">
+      <div class="photo-grid">
+        <div class="photo-card">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNobNk4xs61buoyPk-e-WE24zCOU9UX9kY8Ffj_=w360-h360-k-no" alt="Tripathi Pathshala classroom photo">
+        </div>
+        <div class="photo-card">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNs5a9XcuAJCf_NACqBQ5Et-cPDCPBhDzgUCs_3=w529-h298-k-no" alt="Tripathi Pathshala education center photo">
         </div>
       </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <div class="testi-q">"Science made simple!"</div>
-        <p class="testi-text">I was struggling with science concepts. The teaching here is very clear and patient. I now enjoy studying science!</p>
-        <div class="testi-author">
-          <div class="t-pic">PK</div>
-          <div>
-            <div class="t-name">Priya Kumari</div>
-            <div class="t-class">Student · Class 10</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <div class="testi-q">"Best in Chhatarpur!"</div>
-        <p class="testi-text">My daughter cleared her board exams with great marks. The personal attention here is unlike any other coaching centre nearby.</p>
-        <div class="testi-author">
-          <div class="t-pic">SM</div>
-          <div>
-            <div class="t-name">Sunita Mishra</div>
-            <div class="t-class">Parent · Class 12</div>
-          </div>
-        </div>
+      <div class="map-card">
+        <iframe title="Tripathi Pathshala on Google Maps" src="https://www.google.com/maps?q=TRIPATHI%20PATHSHALA%2028.5057869,77.1793694&amp;z=17&amp;output=embed" loading="lazy"></iframe>
+        <a class="map-link" href="https://www.google.com/maps/place/TRIPATHI+PATHSHALA/@28.505787,77.179369,15z/data=!4m14!1m7!3m6!1s0x390d1f6155ac2303:0xe9ec0a33ac73171f!2sTRIPATHI+PATHSHALA!8m2!3d28.5057869!4d77.1793694!16s%2Fg%2F11lznn7sv7!3m5!1s0x390d1f6155ac2303:0xe9ec0a33ac73171f!8m2!3d28.5057869!4d77.1793694!16s%2Fg%2F11lznn7sv7?hl=en-IN&amp;entry=ttu&amp;g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Open Tripathi Pathshala on Google Maps →</a>
       </div>
     </div>
   </div>
@@ -508,7 +567,7 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
         </div>
         <div class="ci-item">
           <div class="ci-icon">📍</div>
-          <div><div class="ci-lbl">Address</div><div class="ci-val">B 26 Rawat Chowk, Gali No 13, Ambedkar Nagar Colony, Chhatarpur, New Delhi 110074</div></div>
+          <div><div class="ci-lbl">Address</div><div class="ci-val">G54H+8P Chhatarpur, New Delhi, Delhi, India</div></div>
         </div>
         <div class="ci-item">
           <div class="ci-icon">🕐</div>
@@ -522,12 +581,12 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
         <h4>Send an Enquiry</h4>
         <div class="form-row">
           <div class="fg">
-            <label>Student Name</label>
-            <input type="text" placeholder="Full name">
+            <label for="studentName">Student Name</label>
+            <input id="studentName" type="text" placeholder="Full name">
           </div>
           <div class="fg">
-            <label>Class / Grade</label>
-            <select>
+            <label for="studentClass">Class / Grade</label>
+            <select id="studentClass">
               <option value="">Select class</option>
               <option>Class 5</option><option>Class 6</option><option>Class 7</option>
               <option>Class 8</option><option>Class 9</option><option>Class 10</option>
@@ -536,23 +595,23 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
           </div>
         </div>
         <div class="fg">
-          <label>Parent's Mobile Number</label>
-          <input type="tel" placeholder="+91 XXXXX XXXXX">
+          <label for="parentPhone">Parent's Mobile Number</label>
+          <input id="parentPhone" type="tel" placeholder="+91 XXXXX XXXXX">
         </div>
         <div class="fg">
-          <label>Subject of Interest</label>
-          <select>
+          <label for="subjectInterest">Subject of Interest</label>
+          <select id="subjectInterest">
             <option value="">Select subject</option>
             <option>Mathematics</option><option>Science</option><option>English</option>
-            <option>Hindi</option><option>Social Science</option><option>Sanskrit</option>
+            <option>Hindi</option><option>Social Science</option>
             <option>All Subjects</option>
           </select>
         </div>
         <div class="fg">
-          <label>Message (optional)</label>
-          <textarea placeholder="Tell us about your child's needs or any questions..."></textarea>
+          <label for="enquiryMessage">Message (optional)</label>
+          <textarea id="enquiryMessage" placeholder="Tell us about your child's needs or any questions..."></textarea>
         </div>
-        <button class="btn-saffron" style="width:100%;justify-content:center;">Send Enquiry →</button>
+        <button id="sendEnquiry" class="btn-saffron" style="width:100%;justify-content:center;">Send Enquiry →</button>
       </div>
     </div>
   </div>
@@ -566,10 +625,30 @@ footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; }
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#subjects">Subjects</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Location</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <p class="ft-copy">© 2026 Tripathi Pathshala · B 26 Rawat Chowk, Chhatarpur, New Delhi 110074 · +91 6307334572</p>
+  <p class="ft-copy">© 2026 Tripathi Pathshala · G54H+8P Chhatarpur, New Delhi, Delhi, India · +91 6307334572</p>
 </footer>
+
+<script>
+  const sendEnquiry = document.querySelector('#sendEnquiry');
+
+  sendEnquiry?.addEventListener('click', () => {
+    const value = (selector) => document.querySelector(selector)?.value.trim();
+    const lines = [
+      'Hi there! I discovered Tripathi Pathshala online and I am interested in your tutoring services.',
+      value('#studentName') && `Student: ${value('#studentName')}`,
+      value('#studentClass') && `Class: ${value('#studentClass')}`,
+      value('#parentPhone') && `Parent mobile: ${value('#parentPhone')}`,
+      value('#subjectInterest') && `Subject: ${value('#subjectInterest')}`,
+      value('#enquiryMessage') && `Message: ${value('#enquiryMessage')}`
+    ].filter(Boolean);
+
+    window.location.href = `https://wa.me/916307334572?text=${encodeURIComponent(lines.join('\n'))}`;
+  });
+</script>
 
 </body>
 </html>
